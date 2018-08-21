@@ -4,6 +4,14 @@ API rodando em node.js
 
 npm start
 
+
+Na máquina local o projeto está em:
+C:\Users\processo\Desktop\votingapp
+
+(lembrar de rodar o Mongodb localmente antes de usar a API)
+
+localhost:8080
+
 ## Autor
 
 * **Lucas Batochi Pinheiro**
