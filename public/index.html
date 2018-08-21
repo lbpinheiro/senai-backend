@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prova Back End Sênior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../../dist/images/favicon.png">
+  </head>
+  <body class="timeStampApi">
+
+    <div class="container">
+      <div class="ten columns">
+        <div class="center-text row">
+          <h1>Prova Back End Sênior</h1>
+          <p>Exercício para o Processo Seletivo</p>
+        </div>
+        <div class="row shiftDown">
+          <table class="u-full-width" id="usageTable">
+            <thead>
+              <tr>
+                <th>Endpoint</th>
+                <th>Método</th>
+                <th>Descrição</th>
+                <th>JSON esperado (entrada)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>/api/0.1/partido</th>
+                <th>POST</th>
+                <th>Cadastra um novo partido</i></th>
+                <th>
+                  <p>nome: String</p>
+                  <p>numero: Number</p>
+                </th>
+              </tr>
+              <tr>
+                <th>/api/0.1/politico</th>
+                <th>POST</th>
+                <th>
+                  Cadastra um novo político
+                </th>
+                <th>
+                  <p>nome: String</p>
+                  <p>cpf: Number</p>
+                  <p>rg: Number</p>
+                  <p>dataNascimento: Date</p>
+                  <p>idPartido: Number</p>
+                </th>
+              </tr>
+              <tr>
+                  <th>/api/0.1/eleicao</th>
+                  <th>POST</th>
+                  <th>Cadastra uma nova eleição</i></th>
+                  <th>
+                    <p>ano: Number</p>
+                    <p>pais: String</p>
+                    <p>cargo: String [Prefeito, Governador, Senador, Presidente]</p>
+                  </th>
+              </tr>
+              <tr>
+                  <th>/api/0.1/candidato</th>
+                  <th>POST</th>
+                  <th>Faz a associação Político-Eleição</i></th>
+                  <th>
+                    <p>idPolitico: Number</p>
+                    <p>idEleicao: Number</p>
+                  </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+          <h2>Sobre a API</h2>
+          <ul>
+            <li>
+              <strong>Banco de dados</strong>
+              <p class="shiftRight">Mongodb, o arquivo de configuração .env como padrão está apontando para uma base local</em></p>
+            </li>
+            <li>
+              <strong>Server</strong>
+              <p class="shiftRight">node.js, para rodar o site basta o comando 'npm start' no mesmo diretório do package.json</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <h2>JSON de retorno</h2>
+          <ul>
+            <li>Execução bem sucedida: <code>{ "msg": [String] }</code></li>
+
+            <li>Execução com erro: <code>{ "msg": [String], "errorCode": [String] }</code></li>
+          </ul>
+        </div>
+
+        <div class="row center-text">
+          <hr/>
+          <p><a href="https://twitter.com/lucasdesenv">Lucas B. Pinheiro</a> 2018</p>
+          <p>This code is on Github <a href="https://github.com/lbpinheiro/fcc-shortenerurl">
+<img border="0" alt="Github logo" src="GitHub-Mark-32px.png">
+</a></p>
+        </div>
+
+      </div>
+    </div>
+    <script>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "votingapp",
+  "version": "1.0.0",
+  "description": "Prova de Back End - SENAI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "senai",
+    "backend",
+    "rest"
+  ],
+  "author": "Lucas Batochi Pinheiro",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.2",
+    "mongoose": "^4.5.4",
+    "serve-favicon": "^2.3.0",
+    "url": "^0.11.0",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {}
+}
